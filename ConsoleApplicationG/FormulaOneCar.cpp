@@ -1,8 +1,13 @@
 #include "FormulaOneCar.h"
+#include <iostream>
 
 // Конструктор
 FormulaOneCar::FormulaOneCar(int maxSpeed, double accelerationTime)
     : m_maxSpeed(maxSpeed), m_accelerationTime(accelerationTime) {}
+
+FormulaOneCar::~FormulaOneCar() {
+    std::cout << "FormulaOneCar уничтожен\n";
+}
 
 // Реализация чистой виртуальной функции
 int FormulaOneCar::getMaxSpeed() const {

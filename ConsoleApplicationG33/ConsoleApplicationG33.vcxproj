@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f5e37ee7-3c71-4629-b254-3bedb3a99a23}</ProjectGuid>
-    <RootNamespace>ConsoleApplicationG</RootNamespace>
+    <ProjectGuid>{bab58a2c-ce03-4b91-8f08-5b0a4efa931d}</ProjectGuid>
+    <RootNamespace>ConsoleApplicationG33</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,14 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleApplicationG.cpp" />
-    <ClCompile Include="FormulaOneCar.cpp" />
-    <ClCompile Include="Truck.cpp" />
+    <ClCompile Include="ConsoleApplicationG33.cpp" />
+    <ClCompile Include="F1Car.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
-    <ClInclude Include="FormulaOneCar.h" />
-    <ClInclude Include="Truck.h" />
+    <ClInclude Include="F1Car.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

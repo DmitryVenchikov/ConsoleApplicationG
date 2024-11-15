@@ -1,21 +1,24 @@
 #pragma once
-#ifndef FORMULA_ONE_CAR_H
-#define FORMULA_ONE_CAR_H
+
 
 #include "Car.h"
 
-class FormulaOneCar : public Car {
+class Truck : public Car {
 public:
-    FormulaOneCar(int maxSpeed, double accelerationTime);
-    ~FormulaOneCar();
+    Truck(int maxSpeed, double accelerationTime);
+    Truck(int maxSpeed, double accelerationTime, double weight);
+    ~Truck();
 
     int getMaxSpeed() const override; // Реализуем чистую виртуальную функцию
     double getAccelerationTime() const;
     void setAccelerationTime(double accelerationTime);
+    void setWeigth(double weigth);
+    double getWeigth() const;
 
 private:
     int m_maxSpeed;
     double m_accelerationTime;
+    double m_weight;
 };
 
-#endif // FORMULA_ONE_CAR_H
+ 

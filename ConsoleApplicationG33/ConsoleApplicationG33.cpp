@@ -1,25 +1,14 @@
-﻿// ConsoleApplicationG.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// ConsoleApplicationG33.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
-#include "Car.h"
-#include "FormulaOneCar.h"
-#include "Truck.h"
+#include "F1Car.h"
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    FormulaOneCar f1car(350, 2.5);  // Создаем болид Формулы-1 с максимальной скоростью 350 км/ч и временем разгона 2.5 секунды
-
-    std::cout << "Максимальная скорость болида Формулы-1: " << f1car.getMaxSpeed() << " км/ч\n";
-    std::cout << "Время разгона болида Формулы-1: " << f1car.getAccelerationTime() << " секунд\n";
-
-    Truck truck(350, 2.5,2344);  // Создаем грузовоз
-    std::cout << "Грузоподъемность: " << truck.getWeigth() << " кг\n";
-
-    truck.~Truck();
- 
-    return 0;
+    F1Car f1(300);
+    std::cout << "Максимальная скорость болида Формулы-1: " << f1.getMaxSpeed() << " км/ч\n";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
